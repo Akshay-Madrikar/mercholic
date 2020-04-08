@@ -13,33 +13,40 @@ class Directory extends React.Component {
                   title: 'Rappers',
                   imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                   id: 1,
-                  linkUrl: 'shop/hats'
+                  linkUrl: 'shop/rapper'
                 },
                 {
                   title: 'Youtubers',
                   imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                   id: 2,
-                  linkUrl: 'shop/jackets'
+                  linkUrl: 'shop/youtuber'
                 },
                 {
                   title: 'Bloggers',
                   imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
                   id: 3,
-                  linkUrl: 'shop/sneakers'
+                  linkUrl: 'shop/blogger'
                 },
                 {
                   title: 'Content-creators',
                   imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
                   size: 'large',
                   id: 4,
-                  linkUrl: 'shop/womens'
+                  linkUrl: 'shop/content-creator'
                 },
                 {
                   title: 'Influencers',
                   imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
                   size: 'large',
                   id: 5,
-                  linkUrl: 'shop/mens'
+                  linkUrl: 'shop/influencer'
+                },
+                {
+                  title: 'Pop Artists',
+                  imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                  size: 'large',
+                  id: 6,
+                  linkUrl: 'shop/pop-artist'
                 }
               ]
         };
@@ -48,15 +55,17 @@ class Directory extends React.Component {
     render() {
             return (
                 <div className="container mt-3 pd-3">
-                    {
-                    this.state.sections.map( ({ title, id, imageUrl}) => 
-                        (   <div className="row">
-                                <div className="col-md-4">
-                                    <MenuItem key={id} title={title} imageUrl={imageUrl}/> 
-                                </div> 
-                            </div>
-                        ), 1)
-                    }
+                    <div className="row">
+                        {
+                        this.state.sections.map( ({ id, ...otherSectionProps }) => 
+                            (   
+                              <div key={id} className="col-md-4">
+                                <MenuItem  {...otherSectionProps} />
+                              </div>
+                              
+                            ))
+                        }
+                       </div> 
                 </div>       
             )
         }

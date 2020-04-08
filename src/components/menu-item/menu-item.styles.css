@@ -1,0 +1,26 @@
+
+    .card {
+        width: 18rem;
+        height: 18rem;
+        background-position: center;
+        background-size: cover
+    }
+
+    .menu-title {
+        font-weight: bold;
+    }
+
+    .menu-slogan {
+        font-size: 13px;
+    }
+
+    .btn {
+        background-color: grey;
+        opacity: 0.7;
+    }
+
+    .btn:hover {
+        background-color: white;
+    }
+
+   
