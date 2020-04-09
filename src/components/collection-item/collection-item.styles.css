@@ -1,0 +1,21 @@
+
+.collection-item-card {
+    width: 18rem;
+    height: 18rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.item-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn {
+    background-color: grey;
+    opacity: 0.7;
+}
+
+.btn:hover {
+    background-color: white;
+}
