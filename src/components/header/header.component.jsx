@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as Logo } from '../../assets/logo.svg';
+//import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 const Header = () => {
 
     return (
-    <div classNameName="container">
+    <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light m-3">
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@ const Header = () => {
                     <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/sign-in">Sign In</Link>
+                    <Link className="nav-link" to="/signIn">Sign In</Link>
                     </li>
                 </ul>
                 </div>
