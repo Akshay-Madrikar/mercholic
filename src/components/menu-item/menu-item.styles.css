@@ -29,4 +29,35 @@
         background-color: white;
     }
 
+
+    .menu-btn {
+        /* background-color: black;
+        opacity: 0.7; */
+    
+        --c:rgb(235, 230, 219);
+        color: var(--c);
+        font-size: 16px;
+        border: 0.3em solid var(--c);
+        border-radius: 0.5em;
+        width: 9em;
+        height: 3em;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        letter-spacing: 0.1em;
+        text-align: center;
+        line-height: 2em;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: 0.5s;
+        margin: 1em;
+    }
+    
+    .menu-btn:hover {
+        background-color: white;
+          color: black;
+          border: 1px solid black;
+    
+    }
    

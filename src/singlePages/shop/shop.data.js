@@ -7,7 +7,7 @@ const SHOP_DATA = [
         {
             id: 1,
             name: 'Divine',
-            imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+            imageUrl: 'https://i.ibb.co/cYxn5XN/divine.jpg',
             items: [
                 {
                     id: 1,
@@ -26,7 +26,7 @@ const SHOP_DATA = [
         {
             id: 2,
             name: 'Naezy',
-            imageUrl: '',
+            imageUrl: 'https://i.ibb.co/Tqrnq1d/naezy-300x200.jpg',
             items: [
                 {
                     id: 1,
@@ -45,7 +45,7 @@ const SHOP_DATA = [
         {
             id: 3,
             name: 'Seedhe Maut',
-            imageUrl: '',
+            imageUrl: 'https://i.ibb.co/sVCrDbz/Seedhe-Maut.jpg',
             items: [
                 {
                     id: 1,
@@ -64,7 +64,7 @@ const SHOP_DATA = [
         {
             id: 4,
             name: 'Prabhdeep',
-            imageUrl: '',
+            imageUrl: 'https://i.ibb.co/1GN3PYP/Prabhdeep.jpg',
             items: [
                 {
                     id: 1,
@@ -167,6 +167,89 @@ const SHOP_DATA = [
     },
     {
       id: 3,
+      title: 'Bloggers',
+      routeName: 'blogger',
+      data: [
+        {
+          id: 1,
+          name: 'Amit Agarwal',
+          imageUrl: '',
+          items: [
+            {
+              id: 1,
+              name: 'Black Jean Shearling',
+              imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+              price: 1250
+            },
+            {
+              id: 2,
+              name: 'Blue Jean Jacket',
+              imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+              price: 900
+            }
+          ]
+        },
+        {
+          id: 2,
+          name: 'Sharda Sharma',
+          imageUrl: '',
+          items: [
+            {
+              id: 1,
+              name: 'Grey Jean Jacket',
+              imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+              price: 900
+            },
+            {
+              id: 2,
+              name: 'Brown Shearling',
+              imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+              price: 1650
+            }
+          ]
+        },
+        {
+          id: 3,
+          name: 'Abhijit Mukherjee',
+          imageUrl: '',
+          items: [
+            {
+              id: 1,
+              name: 'Tan Trench',
+              imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+              price: 1850
+            },
+            {
+              id: 2,
+              name: 'Brown Shearling',
+              imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+              price: 1650
+            }
+          ]
+        },
+        {
+          id: 4,
+          name: 'Nandini Shenoy',
+          imageUrl: '',
+          items: [
+            {
+              id: 1,
+              name: 'Air Jordan Limited',
+              imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+              price: 1900
+            },
+            {
+              id: 2,
+              name: 'Timberlands',
+              imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+              price: 2000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 4,
       title: 'Bloggers',
       routeName: 'blogger',
       data: [

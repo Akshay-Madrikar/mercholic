@@ -12,7 +12,7 @@ const MenuItem = ({ title, imageUrl, history, match, linkUrl }) => {
                 backgroundImage: `url(${imageUrl})`
             }}>
                 <div className="menu-body card-body align-items-center d-flex justify-content-center">
-                    <p className="btn  rounded-0">
+                    <p className="menu-btn btn  rounded-0">
                         <span className="menu-title">{title.toUpperCase()}</span><br/>
                         <span className="menu-slogan">SHOP NOW</span>
                     </p>
