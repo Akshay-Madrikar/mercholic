@@ -26,7 +26,7 @@ const SHOP_DATA = [
         {
             id: 2,
             name: 'Naezy',
-            imageUrl: 'https://i.ibb.co/Tqrnq1d/naezy-300x200.jpg',
+            imageUrl: 'https://i.ibb.co/MNCgTYH/Naezy.jpg',
             items: [
                 {
                     id: 1,
@@ -45,7 +45,7 @@ const SHOP_DATA = [
         {
             id: 3,
             name: 'Seedhe Maut',
-            imageUrl: 'https://i.ibb.co/sVCrDbz/Seedhe-Maut.jpg',
+            imageUrl: 'https://i.ibb.co/brrQgLC/Seedhe-Maut.jpg',
             items: [
                 {
                     id: 1,
@@ -90,7 +90,7 @@ const SHOP_DATA = [
         {
           id: 1,
           name: 'Bhuvan Bham',
-          imageUrl: '',
+          imageUrl: 'https://i.ibb.co/Fqp8xh2/Bhuvam-bham.jpg',
           items: [
             {
               id: 1,
@@ -109,7 +109,7 @@ const SHOP_DATA = [
         {
           id: 2,
           name: 'Beyounick',
-          imageUrl: '',
+          imageUrl: 'https://i.ibb.co/HCkggF9/Beyounick.jpg',
           items: [
             {
               id: 1,
@@ -128,7 +128,7 @@ const SHOP_DATA = [
         {
           id: 3,
           name: 'BeerBiceps',
-          imageUrl: '',
+          imageUrl: 'https://i.ibb.co/ydSvrJH/Beerbiceps.jpg',
           items: [
             {
               id: 1,
@@ -147,7 +147,7 @@ const SHOP_DATA = [
         {
           id: 4,
           name: 'MostlySane',
-          imageUrl: '',
+          imageUrl: 'https://i.ibb.co/5c8NRsL/Mostlysane.jpg',
           items: [
             {
               id: 1,
