@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CollectionItem from '../collection-item/collection-item.component';
+import CategoryItem from '../category-item/category-item.component';
 
-const CollectionPreview = ({ title, data }) => {
+const CategoryPreview = ({ title, data }) => {
     return(
         
         <div>
@@ -22,7 +22,7 @@ const CollectionPreview = ({ title, data }) => {
                       data.map( ({ id, ...otherItemProps }) => 
                             (   
                               <div key={id} className="col-md-3">
-                                <CollectionItem  {...otherItemProps} />
+                                <CategoryItem  {...otherItemProps} />
                               </div>
                               
                             ))
@@ -34,4 +34,4 @@ const CollectionPreview = ({ title, data }) => {
 
 };
 
-export default CollectionPreview;
+export default CategoryPreview;

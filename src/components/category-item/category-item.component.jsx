@@ -1,19 +1,21 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-import './collection-item.styles.scss';
+import './category-item.styles.css';
 
-const CollectionItem = ({ id, name, imageUrl }) => {
+const CategoryItem = ({ id, name, imageUrl, linkUrl, history, match }) => {
 
     return (
         <div>
         <div className="card-group">
-        <div className="container align-items-center d-flex justify-content-center m-3 p-1">
+        <div className="container align-items-center d-flex justify-content-center m-3 p-1" 
+        onClick={() => history.push(`${linkUrl}`)}>
             <div className="collection-item-card card" style={{ 
                 backgroundImage: `url(${imageUrl})`
             }}>
                 <div className="card-body align-items-center d-flex flex-column">
                     <p className="item-btn btn mt-auto rounded-0">
-                        <span className="item-slogan">ADD TO CART</span>
+                        <span className="item-slogan">EXPLORE</span>
                     </p>
                 </div>
             </div>     
@@ -24,4 +26,4 @@ const CollectionItem = ({ id, name, imageUrl }) => {
     );
 };
 
-export default CollectionItem;
+export default withRouter(CategoryItem);

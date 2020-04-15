@@ -1,4 +1,4 @@
-const SHOP_DATA = [
+const EXPLORE_DATA = [
     {
       id: 1,
       title: 'Rappers',
@@ -8,6 +8,7 @@ const SHOP_DATA = [
             id: 1,
             name: 'Divine',
             imageUrl: 'https://i.ibb.co/cYxn5XN/divine.jpg',
+            linkUrl: 'explore/rapper/divine',
             items: [
                 {
                     id: 1,
@@ -27,6 +28,7 @@ const SHOP_DATA = [
             id: 2,
             name: 'Naezy',
             imageUrl: 'https://i.ibb.co/MNCgTYH/Naezy.jpg',
+            linkUrl: 'explore/rapper/naezy',
             items: [
                 {
                     id: 1,
@@ -46,6 +48,7 @@ const SHOP_DATA = [
             id: 3,
             name: 'Seedhe Maut',
             imageUrl: 'https://i.ibb.co/brrQgLC/Seedhe-Maut.jpg',
+            linkUrl: 'explore/rapper/seedhe-maut',
             items: [
                 {
                     id: 1,
@@ -65,6 +68,7 @@ const SHOP_DATA = [
             id: 4,
             name: 'Prabhdeep',
             imageUrl: 'https://i.ibb.co/1GN3PYP/Prabhdeep.jpg',
+            linkUrl: 'explore/rapper/prabhdeep',
             items: [
                 {
                     id: 1,
@@ -476,4 +480,4 @@ const SHOP_DATA = [
 
   ]
 
-  export default SHOP_DATA;
+  export default EXPLORE_DATA;
