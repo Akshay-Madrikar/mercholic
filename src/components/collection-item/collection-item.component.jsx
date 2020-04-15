@@ -1,27 +1,38 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import CustomButton from '../custom-button/custom-button.component';
+import  { addItem } from '../../redux/cart/cart.actions';
 
 import './collection-item.styles.scss';
 
-const CollectionItem = ({ id, name, imageUrl }) => {
+const CollectionItem = ({ item, addItem }) => {
+
+    const { name, imageUrl, price  } = item;
 
     return (
         <div>
-        <div className="card-group">
-        <div className="container align-items-center d-flex justify-content-center m-3 p-1">
-            <div className="collection-item-card card" style={{ 
-                backgroundImage: `url(${imageUrl})`
-            }}>
-                <div className="card-body align-items-center d-flex flex-column">
-                    <p className="item-btn btn mt-auto rounded-0">
-                        <span className="item-slogan">ADD TO CART</span>
-                    </p>
+            <div className="collection card-group">
+                <div className="container align-items-center d-flex justify-content-center m-3 p-1">
+                    <div className="collection-item-card card" style={{ 
+                        backgroundImage: `url(${imageUrl})`
+                    }}>
+                        <div className="card-body align-items-center d-flex flex-column">
+                            <CustomButton onClick={() => addItem(item)} inverted>ADD TO CART</CustomButton>
+                        </div>
+                    </div>     
                 </div>
-            </div>     
-        </div>
-        </div>
-            <p className="item-title text-center">{name}</p>
+            </div>
+            <div className="collection-item-footer">
+                <p className="collection-item-title text-left">{name}</p>
+                <p className="collection-item-price">{price}</p>
+            </div>
         </div>
     );
 };
 
-export default CollectionItem;
+const mapDispatchToProps = ( dispatch ) => ({
+    addItem: item => dispatch( addItem( item ) )
+});
+
+export default connect(null,mapDispatchToProps)(CollectionItem);

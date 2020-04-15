@@ -2,33 +2,28 @@ import React from 'react';
 
 import CollectionItem from '../collection-item/collection-item.component';
 
-const CollectionPreview = ({ title, data }) => {
+const CollectionPreview = ({ name, items }) => {
     return(
         
         <div>
-            {/* <h1>{title.toUpperCase()}</h1>
-            <div>
-                {
-                    data.map(({ id, ...otherItemProps }) => (
-                    <CollectionItem key={id} {...otherItemProps}/>
-                    ))
-                }
-            </div> */}
-
             <div className="container mt-3 p-3">
-                <h1>{title.toUpperCase()}</h1>
+                <h1>{name.toUpperCase()}</h1>
                     <div className="row">
                         {
-                      data.map( ({ id, ...otherItemProps }) => 
-                            (   
-                              <div key={id} className="col-md-3">
-                                <CollectionItem  {...otherItemProps} />
-                              </div>
-                              
-                            ))
+                            
+                            items.map( (item) => 
+                                    (   
+                                    <div key={item.id} className="col-md-3">
+                                        {
+                                            <CollectionItem  item={item} />
+                                            }
+                                    
+                                    </div>
+                                    
+                                    ))
                         }
-                       </div> 
-             </div> 
+                    </div> 
+            </div> 
         </div>
     );
 

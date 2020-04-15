@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import EXPLORE_DATA from '../explore/explore.data';
+import COLLECTION_DATA from './collection.data';
 import CollectionPreview from '../../components/collection-preview/collection-preview.component';
 import './collection.styles.scss';
 
@@ -11,10 +11,12 @@ class CollectionPage extends React.Component {
         super(props);
 
         this.state = {
-            collections: EXPLORE_DATA
+            collections: COLLECTION_DATA
         }
     }
-   
+
+
+
 
     render(){
         return(
