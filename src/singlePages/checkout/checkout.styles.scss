@@ -97,7 +97,8 @@ body{margin-top:20px;}
     .shopping-cart .product-item .product-thumb,
     .wishlist-table .product-item .product-thumb,
     .order-table .product-item .product-thumb {
-        display: none
+        display: block;
+        width: 100%
     }
 }
 

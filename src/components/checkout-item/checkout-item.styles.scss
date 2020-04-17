@@ -1,1 +1,17 @@
 body{margin-top:20px;}
+
+.remove-from-cart {
+    cursor: pointer;
+}
+
+.quantity {
+    display: flex;
+
+    .arrow {
+        cursor: pointer;
+    }
+
+    .value {
+        margin: 0 10px;
+    }
+}

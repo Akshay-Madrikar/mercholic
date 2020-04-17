@@ -17,7 +17,7 @@ return(
                 <thead>
                     <tr>
                         <th>Product Name</th>
-                        <th className="text-center">Quantity</th>
+                        <th className="text-left">Quantity</th>
                         <th className="text-center">Subtotal</th>
                         <th className="text-center"><button className="clear-btn btn btn-sm btn-danger">Clear Cart</button></th>
                     </tr>
