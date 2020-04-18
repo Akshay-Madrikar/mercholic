@@ -2,16 +2,16 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import CustomButton from '../custom-button/custom-button.component';
-import  { addItem } from '../../redux/cart/cart.actions';
+import  { addItem } from '../../redux/cart/cart.actions'
 
-import './collection-item.styles.scss';
+import './collection-item-category.styles.scss';
 
-const CollectionItem = ({ item, addItem }) => {
-    console.log(item)
-
+const CollectionItemCategory = (item, { addItem } ) => {
+    
     const { name, imageUrl, price  } = item;
 
     return (
+      
         <div>
             <div className="collection card-group">
                 <div className="container align-items-center d-flex justify-content-center m-3 p-1">
@@ -36,4 +36,4 @@ const mapDispatchToProps = ( dispatch ) => ({
     addItem: item => dispatch( addItem( item ) )
 });
 
-export default connect(null,mapDispatchToProps)(CollectionItem);
+export default connect(null,mapDispatchToProps)(CollectionItemCategory);

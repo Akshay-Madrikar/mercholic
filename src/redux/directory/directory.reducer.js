@@ -23,7 +23,7 @@ const INTIAL_STATE = {
           imageUrl: 'https://i.ibb.co/Xxp8K0f/Content-Creator.png',
           size: 'large',
           id: 4,
-          linkUrl: 'explore/content-creator'
+          linkUrl: 'explore/contentcreator'
         },
         {
           title: 'Influencer',
@@ -37,7 +37,7 @@ const INTIAL_STATE = {
           imageUrl: 'https://i.ibb.co/2MTzqh7/Pop-Artist.jpg',
           size: 'large',
           id: 6,
-          linkUrl: 'explore/pop-artist'
+          linkUrl: 'explore/popartist'
         }
     
     ]
