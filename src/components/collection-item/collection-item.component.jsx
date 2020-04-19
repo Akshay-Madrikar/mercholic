@@ -26,7 +26,7 @@ const CollectionItem = ({ item, addItem }) => {
             </div>
             <div className="collection-item-footer">
                 <p className="collection-item-title text-left">{name}</p>
-                <p className="collection-item-price">{price}</p>
+                <p className="collection-item-price">&#x20b9;{price}</p>
             </div>
         </div>
     );

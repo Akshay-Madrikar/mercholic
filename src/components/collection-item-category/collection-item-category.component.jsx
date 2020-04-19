@@ -6,7 +6,7 @@ import  { addItem } from '../../redux/cart/cart.actions'
 
 import './collection-item-category.styles.scss';
 
-const CollectionItemCategory = (item, { addItem } ) => {
+const CollectionItemCategory = ({item,  addItem  }) => {
     
     const { name, imageUrl, price  } = item;
 
@@ -26,7 +26,7 @@ const CollectionItemCategory = (item, { addItem } ) => {
             </div>
             <div className="collection-item-footer">
                 <p className="collection-item-title text-left">{name}</p>
-                <p className="collection-item-price">{price}</p>
+                <p className="collection-item-price">&#x20b9;{price}</p>
             </div>
         </div>
     );

@@ -60,11 +60,10 @@ const CollectionPage = ({ collection } ) => {
     return(
         <div >
             <h1 className="text-center">{name.toUpperCase()}</h1> 
-             {
-                items.map( ({ id,...otherCollectionProps }) => (
-                <CollectionItemCategory key={id} {...otherCollectionProps}/>)
-                )
-                
+            {
+                items.map( (item) => (
+                 <CollectionItemCategory key={item.id} item={item}/>)
+                )  
             }
      </div>
     );

@@ -24,7 +24,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
                                 <div className="arrow" onClick={() => addItem(cartItem)}>&#10097;</div>
                             </div>
                         </td>
-                        <td className="text-center text-lg text-medium">${price}</td>
+                        <td className="text-center text-lg text-medium">&#x20b9;{price}</td>
                     
                         <td className="text-center"><div className="remove-from-cart" data-toggle="tooltip" title="" data-original-title="Remove item" onClick={() => clearItem(cartItem)}><i class="fa fa-trash" ></i></div></td>
                     </tr>

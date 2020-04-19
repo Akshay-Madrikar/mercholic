@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
+import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors';
 
 import './checkout.styles.scss';
@@ -35,11 +36,16 @@ return(
                     <button className="btn btn-outline-primary btn-sm" type="submit">Apply Coupon</button>
                 </form>
             </div>
-            <div className="column text-lg">Subtotal: <span class="text-medium">${total}</span></div>
+            <div className="column text-lg">Subtotal: <span class="text-medium">&#x20b9;{total}</span></div>
         </div>
         <div className="shopping-cart-footer">
             <div className="column"><button onClick={() => history.push("/explore")}><i class="icon-arrow-left"></i>&nbsp;Back to Shopping</button></div>
-            <div className="column"><button className="btn ">Checkout</button></div>
+            <div className="warning">
+                *Please use the following test credit card for payments*
+                <br />
+                4242 4242 4242 4242 - Exp: 01/24 - CVV:420
+            </div>
+            <div className="column"><StripeCheckoutButton className="btn" price={total}/></div>
         </div>
     </div>
     )
