@@ -9,10 +9,10 @@ export const selectExploreCategory = createSelector(
 
 export const selectCategory = categoryUrlParam => createSelector(
     [selectExploreCategory],
-    categories => categories[categoryUrlParam]
+    categories => (categories ? categories[categoryUrlParam] : null)
 );
 
 export const selectExploreCategoryOverview = createSelector(
     [selectExploreCategory],
-    categories => Object.keys(categories).map(key => categories[key])
+    categories => categories ? Object.keys(categories).map(key => categories[key]) : []
 );

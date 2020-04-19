@@ -9,9 +9,6 @@ import './category.styles.scss';
 const CategoryPage = ({ categories }) => {
      console.log(categories)
     const { title, data } = categories;
-    // console.log(data)
-    // const itemsData = data.map( item => item.items );
-    // console.log(itemsData)
  
     return(
         <div className="category-page">

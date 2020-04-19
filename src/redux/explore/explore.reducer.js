@@ -1,8 +1,7 @@
-import EXPLORE_DATA from './explore.data';
 import CategoryActionTypes from './explore.types';
 
 const INTIAL_STATE = {
-    categories: EXPLORE_DATA
+    categories: null
 };
 
 const exploreReducer = ( state = INTIAL_STATE, action ) => {
