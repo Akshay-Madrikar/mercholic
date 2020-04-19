@@ -7,7 +7,9 @@ import CollectionPreview from '../../components/collection-preview/collection-pr
 import './category.styles.scss';
 
 const CategoryPage = ({ category }) => {
-     const { title, data } = category;
+     
+    const { title, data } = category;
+     
     // console.log(data)
     // const itemsData = data.map( item => item.items );
     // console.log(itemsData)

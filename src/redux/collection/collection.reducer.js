@@ -1,4 +1,4 @@
-import COLLECTION_DATA from './collection.data'
+import COLLECTION_DATA from './collection.data';
 
 const INTIAL_STATE = {
     collections: COLLECTION_DATA

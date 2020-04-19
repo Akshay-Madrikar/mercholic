@@ -18,5 +18,10 @@ export const selectExploreCategory = createSelector(
 
 export const selectCategory = categoryUrlParam => createSelector(
     [selectExploreCategory],
-    categories => categories.find( category => category.id === CATEGORY_ID_MAP[categoryUrlParam] )
+    categories => categories[categoryUrlParam]
+);
+
+export const selectExploreCategoryOverview = createSelector(
+    [selectExploreCategory],
+    categories => Object.keys(categories).map(key => categories[key])
 );

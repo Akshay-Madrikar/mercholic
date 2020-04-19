@@ -15,9 +15,12 @@ export const selectExploreCollection = createSelector(
     collection => collection.collections
 );
 
-
-
 export const selectCollectionItems = collectionUrlParam => createSelector(
     [selectExploreCollection],
-    collections => collections.find( collection => collection.id === COLLECTION_ID_MAP[collectionUrlParam] )
+    collections => collections[collectionUrlParam]
+);
+
+export const selectCollectionItemsOverview = createSelector(
+    [selectExploreCollection],
+    collections => Object.keys(collections).map(key => collections[key])
 );

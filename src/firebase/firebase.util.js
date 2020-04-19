@@ -2,8 +2,6 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-
-
 const config = {
     apiKey: "AIzaSyCmbXrIctWjIQ9HYTeOK2TAgSZWLvUAipY",
     authDomain: "mercholic-db.firebaseapp.com",

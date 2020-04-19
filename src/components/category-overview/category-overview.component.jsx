@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { selectExploreCategory } from '../../redux/explore/explore.selectors'
+import { selectExploreCategoryOverview } from '../../redux/explore/explore.selectors'
 import CategoryPreview from '../category-preview/category-preview.component';
 
 import './category-overview.styles.scss';
@@ -15,7 +15,7 @@ const CategoryOverview = ({ categories }) => (
 );
 
 const mapStateToProps = createStructuredSelector({
-    categories: selectExploreCategory
+    categories: selectExploreCategoryOverview
 });
 
 export default connect(mapStateToProps)(CategoryOverview);
