@@ -6,10 +6,9 @@ import CollectionPreview from '../../components/collection-preview/collection-pr
 
 import './category.styles.scss';
 
-const CategoryPage = ({ category }) => {
-     
-    const { title, data } = category;
-     
+const CategoryPage = ({ categories }) => {
+     console.log(categories)
+    const { title, data } = categories;
     // console.log(data)
     // const itemsData = data.map( item => item.items );
     // console.log(itemsData)
@@ -27,7 +26,7 @@ const CategoryPage = ({ category }) => {
 };
 
 const mapStateToProps = ( state, ownProps ) => ({
-    category: selectCategory(ownProps.match.params.categoryId)(state)
+    categories: selectCategory(ownProps.match.params.categoryId)(state)
 });
 
 export default connect(mapStateToProps)(CategoryPage);

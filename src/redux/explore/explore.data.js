@@ -11,16 +11,16 @@ const EXPLORE_DATA = {
           linkUrl: 'explore/rapper/divine',
           items: [
               {
-                  id: 1,
-                  name: 'Brown Brim',
-                  imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-                  price: 250
+              id: 1,
+              name: 'GullyGang T-shirt',
+              imageUrl: 'https://i.ibb.co/SsD19Cd/divine-merch-1.jpg',
+              price: 250
               },
               {
-                  id: 2,
-                  name: 'Blue Beanie',
-                  imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-                  price: 180
+                id: 2,
+                name: 'GullyGang Hoodie',
+                imageUrl: 'https://i.ibb.co/7Cj7Wny/divine-merch-2.jpg',
+                price: 180
               }
           ]
       },
@@ -31,16 +31,16 @@ const EXPLORE_DATA = {
           linkUrl: 'explore/rapper/naezy',
           items: [
               {
-                  id: 3,
-                  name: 'Brown Cowboy',
-                  imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-                  price: 350
+                id: 3,
+                name: 'Black B70',
+                imageUrl: 'https://i.ibb.co/r2tWpxB/naezy-merch-1.jpg',
+                price: 350
               },
               {
-                  id: 4,
-                  name: 'Grey Brim',
-                  imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-                  price: 250
+                id: 4,
+                name: 'Bohot Hard Tshirt',
+                imageUrl: 'https://i.ibb.co/StTFNKQ/naezy-merch-2.jpg',
+                price: 250
               }
           ]
       },
@@ -52,15 +52,15 @@ const EXPLORE_DATA = {
           items: [
               {
                   id: 5,
-                  name: 'Green Beanie',
-                  imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
+                  name: 'SM Hoodie',
+                  imageUrl: 'https://i.ibb.co/TtZL1pt/seedhe-maut-merch-1.jpg',
                   price: 180
               },
               {
-                  id: 6,
-                  name: 'Palm Tree Cap',
-                  imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-                  price: 140
+                id: 6,
+                name: 'Byaan Album Poster',
+                imageUrl: 'https://i.ibb.co/Nt1HgK3/seedhe-maut-merch-2.jpg',
+                price: 140
               }
           ]
       },
@@ -72,15 +72,15 @@ const EXPLORE_DATA = {
           items: [
               {
                   id: 7,
-                  name: 'Red Beanie',
-                  imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
+                  name: 'King Gold',
+                  imageUrl: 'https://i.ibb.co/NLnbYMK/prabhdeep-merch-1.jpg',
                   price: 180
               },
               {
-                  id: 8,
-                  name: 'Wolf Cap',
-                  imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-                  price: 140
+                id: 8,
+                name: 'King Fanny',
+                imageUrl: 'https://i.ibb.co/Hrv1J2V/prabhdeep-merch-2.jpg',
+                price: 140
               }
           ]
       }
@@ -95,6 +95,7 @@ const EXPLORE_DATA = {
         id: 5,
         name: 'Bhuvan Bham',
         imageUrl: 'https://i.ibb.co/Fqp8xh2/Bhuvam-bham.jpg',
+        linkUrl: 'explore/youtuber/bhuvanbham',
         items: [
           {
             id: 9,
@@ -114,6 +115,7 @@ const EXPLORE_DATA = {
         id: 6,
         name: 'Beyounick',
         imageUrl: 'https://i.ibb.co/HCkggF9/Beyounick.jpg',
+        linkUrl: 'explore/youtuber/beyounick',
         items: [
           {
             id: 11,
@@ -133,6 +135,7 @@ const EXPLORE_DATA = {
         id: 7,
         name: 'BeerBiceps',
         imageUrl: 'https://i.ibb.co/ydSvrJH/Beerbiceps.jpg',
+        linkUrl: 'explore/youtuber/beerbiceps',
         items: [
           {
             id: 13,
@@ -152,6 +155,7 @@ const EXPLORE_DATA = {
         id: 8,
         name: 'MostlySane',
         imageUrl: 'https://i.ibb.co/5c8NRsL/Mostlysane.jpg',
+        linkUrl: 'explore/youtuber/mostlysane',
         items: [
           {
             id: 15,
@@ -177,7 +181,8 @@ const EXPLORE_DATA = {
       {
         id: 9,
         name: 'Amit Agarwal',
-        imageUrl: '',
+        imageUrl: 'https://i.ibb.co/0YZc2hW/Amit-Agarwal.jpg',
+        linkUrl: 'explore/blogger/amitagarwal',
         items: [
           {
             id: 17,
@@ -196,7 +201,8 @@ const EXPLORE_DATA = {
       {
         id: 10,
         name: 'Sharda Sharma',
-        imageUrl: '',
+        imageUrl: 'https://i.ibb.co/vQ7BPjm/Shradha-Sharma.jpg',
+        linkUrl: 'explore/blogger/shardasharma',
         items: [
           {
             id: 19,
@@ -214,8 +220,9 @@ const EXPLORE_DATA = {
       },
       {
         id: 11,
-        name: 'Abhijit Mukherjee',
-        imageUrl: '',
+        name: 'Abhijeet Mukherjee',
+        imageUrl: 'https://i.ibb.co/crTYWKd/Abhijeet-Mukherjee.jpg',
+        linkUrl: 'explore/blogger/abhijeetmukherjee',
         items: [
           {
             id: 21,
@@ -234,7 +241,8 @@ const EXPLORE_DATA = {
       {
         id: 12,
         name: 'Nandini Shenoy',
-        imageUrl: '',
+        imageUrl: 'https://i.ibb.co/L0FCyGP/Nandini-Shenoy.png',
+        linkUrl: 'explore/blogger/nandinishenoy',
         items: [
           {
             id: 23,
@@ -254,13 +262,14 @@ const EXPLORE_DATA = {
   },
   contentcreator: {
     id: 4,
-    title: 'ContentCreator',
+    title: 'Content Creator',
     routeName: 'contentcreator',
     data: [
       {
         id: 13,
-        name: 'Amit Agarwal',
-        imageUrl: '',
+        name: 'Andrew Mead',
+        imageUrl: 'https://i.ibb.co/Wf6bz7V/Andrew-Mead.jpg',
+        linkUrl: 'explore/contentcreator/andrewmead',
         items: [
           {
             id: 25,
@@ -278,8 +287,9 @@ const EXPLORE_DATA = {
       },
       {
         id: 14,
-        name: 'Sharda Sharma',
-        imageUrl: '',
+        name: 'Andrei Neagoie',
+        imageUrl: 'https://i.ibb.co/NVS9ZSK/Andrei-Neagoie.jpg',
+        linkUrl: 'explore/contentcreator/andreineagoie',
         items: [
           {
             id: 27,
@@ -297,8 +307,9 @@ const EXPLORE_DATA = {
       },
       {
         id: 15,
-        name: 'Abhijit Mukherjee',
-        imageUrl: '',
+        name: 'Maximilian',
+        imageUrl: 'https://i.ibb.co/QnvLmg0/Maximilian-Schwarzmuller.jpg',
+        linkUrl: 'explore/contentcreator/maximilian',
         items: [
           {
             id: 29,
@@ -316,8 +327,9 @@ const EXPLORE_DATA = {
       },
       {
         id: 16,
-        name: 'Nandini Shenoy',
-        imageUrl: '',
+        name: 'Yihua Zhang',
+        imageUrl: 'https://i.ibb.co/k4byJFx/Yihua-Zhang.jpg',
+        linkUrl: 'explore/contentcreator/yihuazhang',
         items: [
           {
             id: 31,
@@ -334,150 +346,183 @@ const EXPLORE_DATA = {
         ]
       }
     ]
+  },
+
+  influencer: {
+    id: 5,
+    title: 'Influencer',
+    routeName: 'influencer',
+    data: [
+      {
+        id: 17,
+        name: 'Meghna Kaur',
+        imageUrl: 'https://i.ibb.co/kMhKQgf/Meghna-Kaur.jpg',
+        linkUrl: 'explore/influencer/meghnakaur',
+        items: [
+          {
+            id: 33,
+            name: 'Black Jean Shearling',
+            imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+            price: 1250
+          },
+          {
+            id: 34,
+            name: 'Blue Jean Jacket',
+            imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+            price: 900
+          }
+        ]
+      },
+      {
+        id: 18,
+        name: 'Komal Pandey',
+        imageUrl: 'https://i.ibb.co/2qfm2dY/Komal-Pandey.jpg',
+        linkUrl: 'explore/influencer/komalpandey',
+        items: [
+          {
+            id: 35,
+            name: 'Grey Jean Jacket',
+            imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+            price: 900
+          },
+          {
+            id: 36,
+            name: 'Brown Shearling',
+            imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+            price: 1650
+          }
+        ]
+      },
+      {
+        id: 19,
+        name: 'Kritika Khurana',
+        imageUrl: 'https://i.ibb.co/MNd1hFr/Kritika-Khurana.jpg',
+        linkUrl: 'explore/influencer/kritikakhurana',
+        items: [
+          {
+            id: 38,
+            name: 'Tan Trench',
+            imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+            price: 1850
+          },
+          {
+            id: 39,
+            name: 'Brown Shearling',
+            imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+            price: 1650
+          }
+        ]
+      },
+      {
+        id: 20,
+        name: 'Diva Dhawan',
+        imageUrl: 'https://i.ibb.co/7NKhTjX/Diva-Dhawan.jpg',
+        linkUrl: 'explore/influencer/divadhawan',
+        items: [
+          {
+            id: 40,
+            name: 'Air Jordan Limited',
+            imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+            price: 1900
+          },
+          {
+            id: 41,
+            name: 'Timberlands',
+            imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+            price: 2000
+          }
+        ]
+      }
+    ]
+  },
+
+  popartist: {
+    id: 6,
+    title: 'Pop Artist',
+    routeName: 'popartist',
+    data: [
+      {
+        id: 17,
+        name: 'Vidya Vox',
+        imageUrl: 'https://i.ibb.co/9WNmKnn/Vidya-Vox.jpg',
+        linkUrl: 'explore/popartist/vidyavox',
+        items: [
+          {
+            id: 33,
+            name: 'Black Jean Shearling',
+            imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+            price: 1250
+          },
+          {
+            id: 34,
+            name: 'Blue Jean Jacket',
+            imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+            price: 900
+          }
+        ]
+      },
+      {
+        id: 18,
+        name: 'Shirley Setia',
+        imageUrl: 'https://i.ibb.co/x3wvz4w/Shirley-Setia.jpg',
+        linkUrl: 'explore/popartist/shirleysetia',
+        items: [
+          {
+            id: 35,
+            name: 'Grey Jean Jacket',
+            imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+            price: 900
+          },
+          {
+            id: 36,
+            name: 'Brown Shearling',
+            imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+            price: 1650
+          }
+        ]
+      },
+      {
+        id: 19,
+        name: 'Ritviz',
+        imageUrl: 'https://i.ibb.co/vZdVtyq/Ritviz.jpg',
+        linkUrl: 'explore/popartist/ritviz',
+        items: [
+          {
+            id: 38,
+            name: 'Tan Trench',
+            imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+            price: 1850
+          },
+          {
+            id: 39,
+            name: 'Brown Shearling',
+            imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+            price: 1650
+          }
+        ]
+      },
+      {
+        id: 20,
+        name: 'Prateek Kuhad',
+        imageUrl: 'https://i.ibb.co/KKr2yr2/Prateek-Kuhad.png',
+        linkUrl: 'explore/popartist/prateekkuhad',
+        items: [
+          {
+            id: 40,
+            name: 'Air Jordan Limited',
+            imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+            price: 1900
+          },
+          {
+            id: 41,
+            name: 'Timberlands',
+            imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+            price: 2000
+          }
+        ]
+      }
+    ]
   }
+};
 
-
-  //   },
-  //   {
-  //     id: 4,
-  //     title: 'Content Creators',
-  //     routeName: 'content-creator',
-  //     items: [
-  //       {
-  //         id: 1,
-  //         name: 'Blue Tanktop',
-  //         imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-  //         price: 250
-  //       },
-  //       {
-  //         id: 2,
-  //         name: 'Floral Blouse',
-  //         imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-  //         price: 200
-  //       },
-  //       {
-  //         id: 3,
-  //         name: 'Floral Dress',
-  //         imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-  //         price: 800
-  //       },
-  //       {
-  //         id: 4,
-  //         name: 'Red Dots Dress',
-  //         imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-  //         price: 800
-  //       },
-  //       {
-  //         id: 5,
-  //         name: 'Striped Sweater',
-  //         imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-  //         price: 450
-  //       },
-  //       {
-  //         id: 6,
-  //         name: 'Yellow Track Suit',
-  //         imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-  //         price: 1350
-  //       },
-  //       {
-  //         id: 7,
-  //         name: 'White Blouse',
-  //         imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-  //         price: 200
-  //       }
-  //     ]
-  //   },
-  //   {
-  //     id: 5,
-  //     title: 'Influencers',
-  //     routeName: 'influencer',
-  //     items: [
-  //       {
-  //         id: 1,
-  //         name: 'Camo Down Vest',
-  //         imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-  //         price: 3250
-  //       },
-  //       {
-  //         id: 2,
-  //         name: 'Floral T-shirt',
-  //         imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-  //         price: 200
-  //       },
-  //       {
-  //         id: 3,
-  //         name: 'Black & White Longsleeve',
-  //         imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-  //         price: 250
-  //       },
-  //       {
-  //         id: 4,
-  //         name: 'Pink T-shirt',
-  //         imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-  //         price: 250
-  //       },
-  //       {
-  //         id: 5,
-  //         name: 'Jean Long Sleeve',
-  //         imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-  //         price: 400
-  //       },
-  //       {
-  //         id: 6,
-  //         name: 'Burgundy T-shirt',
-  //         imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-  //         price: 250
-  //       }
-  //     ]
-  //   },
-  //   {
-  //     id: 4,
-  //     title: 'Pop Artists',
-  //     routeName: 'pop-artist',
-  //     items: [
-  //       {
-  //         id: 1,
-  //         name: 'Blue Tanktop',
-  //         imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-  //         price: 250
-  //       },
-  //       {
-  //         id: 2,
-  //         name: 'Floral Blouse',
-  //         imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-  //         price: 200
-  //       },
-  //       {
-  //         id: 3,
-  //         name: 'Floral Dress',
-  //         imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-  //         price: 800
-  //       },
-  //       {
-  //         id: 4,
-  //         name: 'Red Dots Dress',
-  //         imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-  //         price: 800
-  //       },
-  //       {
-  //         id: 5,
-  //         name: 'Striped Sweater',
-  //         imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-  //         price: 450
-  //       },
-  //       {
-  //         id: 6,
-  //         name: 'Yellow Track Suit',
-  //         imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-  //         price: 1350
-  //       },
-  //       {
-  //         id: 7,
-  //         name: 'White Blouse',
-  //         imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-  //         price: 200
-  //       }
-  //     ]
-}
-
-  export default EXPLORE_DATA;
+export default EXPLORE_DATA;

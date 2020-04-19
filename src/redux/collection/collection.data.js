@@ -7,14 +7,14 @@ const COLLECTION_DATA = {
       items: [
           {
               id: 1,
-              name: 'Brown Brim',
-              imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+              name: 'GullyGang T-shirt',
+              imageUrl: 'https://i.ibb.co/SsD19Cd/divine-merch-1.jpg',
               price: 250
           },
           {
               id: 2,
-              name: 'Blue Beanie',
-              imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+              name: 'GullyGang Hoodie',
+              imageUrl: 'https://i.ibb.co/7Cj7Wny/divine-merch-2.jpg',
               price: 180
           }
       ]
@@ -27,14 +27,14 @@ const COLLECTION_DATA = {
       items: [
           {
               id: 3,
-              name: 'Brown Cowboy',
-              imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+              name: 'Black B70',
+              imageUrl: 'https://i.ibb.co/r2tWpxB/naezy-merch-1.jpg',
               price: 350
           },
           {
               id: 4,
-              name: 'Grey Brim',
-              imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
+              name: 'Bohot Hard Tshirt',
+              imageUrl: 'https://i.ibb.co/StTFNKQ/naezy-merch-2.jpg',
               price: 250
           }
       ]
@@ -47,14 +47,14 @@ const COLLECTION_DATA = {
       items: [
           {
               id: 5,
-              name: 'Green Beanie',
-              imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
+              name: 'SM Hoodie',
+              imageUrl: 'https://i.ibb.co/TtZL1pt/seedhe-maut-merch-1.jpg',
               price: 180
           },
           {
               id: 6,
-              name: 'Palm Tree Cap',
-              imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
+              name: 'Byaan Album Poster',
+              imageUrl: 'https://i.ibb.co/Nt1HgK3/seedhe-maut-merch-2.jpg',
               price: 140
           }
       ]
@@ -67,14 +67,14 @@ const COLLECTION_DATA = {
       items: [
           {
               id: 7,
-              name: 'Red Beanie',
-              imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
+              name: 'King Gold',
+              imageUrl: 'https://i.ibb.co/NLnbYMK/prabhdeep-merch-1.jpg',
               price: 180
           },
           {
               id: 8,
-              name: 'Wolf Cap',
-              imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
+              name: 'King Fanny',
+              imageUrl: 'https://i.ibb.co/Hrv1J2V/prabhdeep-merch-2.jpg',
               price: 140
           }
       ]
@@ -167,7 +167,7 @@ const COLLECTION_DATA = {
   amitagarwal: {
     id: 9,
     name: 'Amit Agarwal',
-    imageUrl: '',
+    imageUrl: 'https://i.ibb.co/0YZc2hW/Amit-Agarwal.jpg',
     linkUrl: 'explore/blogger/amitagarwal',
     items: [
       {
@@ -188,7 +188,7 @@ const COLLECTION_DATA = {
   shardasharma: {
     id: 10,
     name: 'Sharda Sharma',
-    imageUrl: '',
+    imageUrl: 'https://i.ibb.co/vQ7BPjm/Shradha-Sharma.jpg',
     linkUrl: 'explore/blogger/shardasharma',
     items: [
       {
@@ -206,11 +206,11 @@ const COLLECTION_DATA = {
     ]
   },
   
-  abhijitmukherjee: {
+  abhijeetmukherjee: {
     id: 11,
-    name: 'Abhijit Mukherjee',
-    imageUrl: '',
-    linkUrl: 'explore/blogger/abhijitmukherjee',
+    name: 'Abhijeet Mukherjee',
+    imageUrl: 'https://i.ibb.co/crTYWKd/Abhijeet-Mukherjee.jpg',
+    linkUrl: 'explore/blogger/abhijeetmukherjee',
     items: [
       {
         id: 21,
@@ -230,7 +230,7 @@ const COLLECTION_DATA = {
   nandinishenoy: {
     id: 12,
     name: 'Nandini Shenoy',
-    imageUrl: '',
+    imageUrl: 'https://i.ibb.co/L0FCyGP/Nandini-Shenoy.png',
     linkUrl: 'explore/blogger/nandinishenoy',
     items: [
       {
@@ -241,6 +241,258 @@ const COLLECTION_DATA = {
       },
       {
         id: 24,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  andrewmead: {
+    id: 13,
+    name: 'Andrew Mead',
+    imageUrl: 'https://i.ibb.co/Wf6bz7V/Andrew-Mead.jpg',
+    linkUrl: 'explore/contentcreator/andrewmead',
+    items: [
+      {
+        id: 25,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 26,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  andreineagoie: {
+    id: 14,
+    name: 'Andrei Neagoie',
+    imageUrl: 'https://i.ibb.co/NVS9ZSK/Andrei-Neagoie.jpg',
+    linkUrl: 'explore/contentcreator/andreineagoie',
+    items: [
+      {
+        id: 27,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 28,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  maxmilian: {
+    id: 15,
+    name: 'Maximilian',
+    imageUrl: 'https://i.ibb.co/QnvLmg0/Maximilian-Schwarzmuller.jpg',
+    linkUrl: 'explore/contentcreator/maximilian',
+    items: [
+      {
+        id: 29,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 30,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  yihuazhang: {
+    id: 16,
+    name: 'Yihua Zhang',
+    imageUrl: 'https://i.ibb.co/k4byJFx/Yihua-Zhang.jpg',
+    linkUrl: 'explore/contentcreator/yihuazhang',
+    items: [
+      {
+        id: 31,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 32,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  meghnakaur: {
+    id: 17,
+    name: 'Meghna Kaur',
+    imageUrl: 'https://i.ibb.co/kMhKQgf/Meghna-Kaur.jpg',
+    linkUrl: 'explore/influencer/meghnakaur',
+    items: [
+      {
+        id: 33,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 34,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  komalpandey: {
+    id: 18,
+    name: 'Komal Pandey',
+    imageUrl: 'https://i.ibb.co/2qfm2dY/Komal-Pandey.jpg',
+    linkUrl: 'explore/influencer/komalpandey',
+    items: [
+      {
+        id: 35,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 36,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  kritikakhurana: {
+    id: 19,
+    name: 'Kritika Khurana',
+    imageUrl: 'https://i.ibb.co/MNd1hFr/Kritika-Khurana.jpg',
+    linkUrl: 'explore/influencer/kritikakhurana',
+    items: [
+      {
+        id: 37,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 38,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  divadhawan: {
+    id: 20,
+    name: 'Diva Dhawan',
+    imageUrl: 'https://i.ibb.co/7NKhTjX/Diva-Dhawan.jpg',
+    linkUrl: 'explore/influencer/divadhawan',
+    items: [
+      {
+        id: 39,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 40,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  vidyavox: {
+    id: 21,
+    name: 'Vidya Vox',
+    imageUrl: 'https://i.ibb.co/9WNmKnn/Vidya-Vox.jpg',
+    linkUrl: 'explore/popartist/vidyavox',
+    items: [
+      {
+        id: 41,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 42,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  shirleysetia: {
+    id: 22,
+    name: 'Shirley Setia',
+    imageUrl: 'https://i.ibb.co/x3wvz4w/Shirley-Setia.jpg',
+    linkUrl: 'explore/popartist/shirleysetia',
+    items: [
+      {
+        id: 43,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 44,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  ritviz: {
+    id: 23,
+    name: 'Ritviz',
+    imageUrl: 'https://i.ibb.co/vZdVtyq/Ritviz.jpg',
+    linkUrl: 'explore/popartist/ritviz',
+    items: [
+      {
+        id: 45,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 46,
+        name: 'Timberlands',
+        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        price: 2000
+      }
+    ]
+  },
+
+  prateekkuhad: {
+    id: 24,
+    name: 'Prateek Kuhad',
+    imageUrl: 'https://i.ibb.co/KKr2yr2/Prateek-Kuhad.png',
+    linkUrl: 'explore/popartist/prateekkuhad',
+    items: [
+      {
+        id: 47,
+        name: 'Air Jordan Limited',
+        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        price: 1900
+      },
+      {
+        id: 48,
         name: 'Timberlands',
         imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
         price: 2000

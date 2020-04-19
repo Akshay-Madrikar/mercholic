@@ -39,7 +39,59 @@ export const createUserProfileDocument = async ( userAuth, additonalData ) => {
     }
 
     return userRef;
-}
+};
+
+export const convertCategorySnapshotToMap = ( categorySnapshot ) => {
+    const transformedCategory = categorySnapshot.docs.map(docSnapshot => {
+        const { title, data } = docSnapshot.data();
+
+        return {
+            routeName: encodeURI(title.toLowerCase()),
+            id: docSnapshot.id,
+            title,
+            data
+        };
+    });
+
+    return transformedCategory.reduce((accumulator, category) => {
+        accumulator[category.title.toLowerCase()] = category;
+        return accumulator;
+    },{});
+};
+
+export const convertCollectionSnapshotToMap = ( collection ) => {
+    const transformedCollection = collection.docs.map(doc => {
+        const { name, linkUrl, imageUrl, items } = doc.data();
+
+        return {
+            id: doc.id,
+            name,
+            imageUrl,
+            linkUrl,
+            items
+        }
+    })
+
+    return transformedCollection.reduce((accumulator, collectionData) => {
+        accumulator[collectionData.name.toLowerCase()] = collectionData;
+        return accumulator;
+    },{})
+};
+
+//                      !----- For manually adding data into firestore---------!>
+
+// export const addExploreAndDocuments = async (exploreKey, objectsToAdd) => {
+//     const exploreRef = firestore.collection(exploreKey);
+//     console.log(exploreRef);
+
+//     const batch = firestore.batch();
+//     objectsToAdd.forEach(obj => {
+//         const newDocRef = exploreRef.doc();
+//         batch.set(newDocRef, obj);
+//     });
+
+//     return await batch.commit();
+// };
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
