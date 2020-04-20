@@ -1,8 +1,7 @@
-import COLLECTION_DATA from './collection.data';
 import CollectionActionTypes from './collection.types'
 
 const INTIAL_STATE = {
-    collections: COLLECTION_DATA
+    collections: null
 };
 
 const collectionReducer = ( state = INTIAL_STATE, action ) => {

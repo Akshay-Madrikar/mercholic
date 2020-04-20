@@ -31,7 +31,7 @@ class CollectionPage extends React.Component {
     // console.log(itemName[0])
     // console.log(itemlinkUrl[0])
     render(){
-        const collection = this.props;
+        const { collection } = this.props;
         const { name, items } = collection;
         const { loading } = this.state;
         console.log(collection);

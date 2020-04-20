@@ -9,7 +9,7 @@ export const selectExploreCategory = createSelector(
 
 export const selectCategory = categoryUrlParam => createSelector(
     [selectExploreCategory],
-    categories => (categories ? categories[categoryUrlParam] : null)
+    categories => categories ? categories[categoryUrlParam] : null
 );
 
 export const selectExploreCategoryOverview = createSelector(

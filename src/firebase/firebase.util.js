@@ -57,6 +57,7 @@ export const convertCategorySnapshotToMap = ( categorySnapshot ) => {
         accumulator[category.title.toLowerCase()] = category;
         return accumulator;
     },{});
+
 };
 
 export const convertCollectionSnapshotToMap = ( collection ) => {
