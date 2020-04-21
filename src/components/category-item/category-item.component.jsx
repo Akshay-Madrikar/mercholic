@@ -8,12 +8,12 @@ const CategoryItem = ({ id, name, imageUrl, linkUrl, history, match }) => {
     return (
         <div>
         <div className="category card-group">
-        <div className="container align-items-center d-flex justify-content-center m-3 p-1" 
+        <div className="container align-items-center d-flex justify-content-center m-4 p-4" 
         onClick={() => history.push(`${linkUrl}`)}>
             <div className="category-item-card card" style={{ 
                 backgroundImage: `url(${imageUrl})`
             }}>
-                <div className="card-body align-items-center d-flex flex-column">
+                <div className="card-body align-items-center d-flex justify-content-center">
                     <p className="category-item-btn btn mt-auto rounded-0">
                         <span className="category-item-slogan">EXPLORE</span>
                     </p>

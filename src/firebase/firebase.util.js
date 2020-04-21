@@ -60,8 +60,8 @@ export const convertCategorySnapshotToMap = ( categorySnapshot ) => {
 
 };
 
-export const convertCollectionSnapshotToMap = ( collection ) => {
-    const transformedCollection = collection.docs.map(doc => {
+export const convertCollectionSnapshotToMap = ( collections ) => {
+    const transformedCollection = collections.docs.map(doc => {
         const { name, linkUrl, imageUrl, items } = doc.data();
 
         return {
@@ -71,12 +71,12 @@ export const convertCollectionSnapshotToMap = ( collection ) => {
             linkUrl,
             items
         }
-    })
+    });
 
-    return transformedCollection.reduce((accumulator, collectionData) => {
-        accumulator[collectionData.name.toLowerCase()] = collectionData;
+    return transformedCollection.reduce((accumulator, collection) => {
+        accumulator[collection.name.toLowerCase()] = collection;
         return accumulator;
-    },{})
+    },{});
 };
 
 //                      !----- For manually adding data into firestore---------!>

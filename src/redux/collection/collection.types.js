@@ -1,5 +1,5 @@
 const CollectionActionTypes = {
-    UPDATE_COLLECTION: 'UPDATE_COLLECTION'
+    UPDATE_COLLECTIONS: 'UPDATE_COLLECTIONS'
 };
 
 export default CollectionActionTypes;

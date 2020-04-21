@@ -17,7 +17,7 @@ const CollectionPreview = ({name, items, linkUrl }) => {
                             
                             items.map( (item) => 
                                     (   
-                                    <div key={item.id} className="col-md-3">
+                                    <div key={item.id} className="col-md-6">
                                         {
                                             <CollectionItem  item={item} />
                                             }

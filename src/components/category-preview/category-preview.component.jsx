@@ -21,7 +21,7 @@ const CategoryPreview = ({ title, data }) => {
                         {
                       data.map( ({ id, ...otherItemProps }) => 
                             (   
-                              <div key={id} className="col-md-3">
+                              <div key={id} className="col-sm-6 col-md-4 col-lg-3">
                                 <CategoryItem  {...otherItemProps} />
                               </div>
                               
