@@ -12,9 +12,10 @@
 }
 
 .category-item-title {
-    font-size: 1.3em;
+    font-size: 1.6em;
     margin-left: 1em;
 }
+
 
 .category-item-btn {
     /* background-color: black;
@@ -23,6 +24,8 @@
     --c:rgb(235, 230, 219);
     color: var(--c);
     font-size: 16px;
+    background-color: grey;
+    opacity: 0.7;
     border: 0.3em solid var(--c);
     border-radius: 0.5em;
     width: 8em;
@@ -38,6 +41,7 @@
     z-index: 1;
     transition: 0.5s;
     margin: 1em;
+    word-wrap: break-word !important;
 }
 
 .category-item-btn:hover {

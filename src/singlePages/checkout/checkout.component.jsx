@@ -18,7 +18,7 @@ return(
                     <tr>
                         <th>Product Name</th>
                         <th className="text-left">Quantity</th>
-                        <th className="text-center">Subtotal</th>
+                        <th className="text-center">Total</th>
                         <th className="text-center">Delete</th>
                         {/* <th className="text-center"><button className="clear-btn btn btn-sm btn-danger">Clear Cart</button></th> */}
                     </tr>
@@ -34,13 +34,13 @@ return(
             <div className="column">
                 <form className="coupon-form" method="post">
                     <input className="form-control form-control-sm" type="text" placeholder="Coupon code" required=""/>
-                    <button className="btn btn-outline-primary btn-sm" type="submit">Apply Coupon</button>
+                    <button className="apply-btn btn btn-sm rounded-0" type="submit">Apply Coupon</button>
                 </form>
             </div>
             <div className="column text-lg">Subtotal: <span class="text-medium">&#x20b9;{total}</span></div>
         </div>
         <div className="shopping-cart-footer">
-            <div className="column"><button onClick={() => history.push("/explore")}><i class="icon-arrow-left"></i>&nbsp;Back to Shopping</button></div>
+            <div className=" column btn"><button onClick={() => history.push("/explore")}><i class="icon-arrow-left"></i>&nbsp;Back to Shopping</button></div>
             <div className="warning">
                 *Please use the following test credit card for payments*
                 <br />

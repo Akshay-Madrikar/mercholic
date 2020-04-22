@@ -1,25 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import FormInput from '../../components/form-input/form-input.component';
-import CustomButton from '../../components/custom-button/custom-button.component';
 import { auth, createUserProfileDocument } from '../../firebase/firebase.util';
 
 import './sign-up.styles.scss';
 
-class SignUp extends React.Component {
-    constructor() {
-        super();
+const SignUp = () => {
 
-        this.state = {
-            displayName: '',
-            email: '',
-            password: '',
-            confirmPassword: ''
-        }
-    }
+    const [userCredentials, setCredentials] = useState({
+        displayName: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+    })
 
-    handleSubmit = async (event) => {
-        const { displayName, email, password, confirmPassword } = this.state;
+    const { displayName, email, password, confirmPassword } = userCredentials;
+
+    const handleSubmit = async (event) => {
 
         if( password !== confirmPassword ) {
             alert("Passwords don't match");
@@ -31,7 +28,7 @@ class SignUp extends React.Component {
 
             await createUserProfileDocument( user, { displayName } );
 
-            this.setState({
+            setCredentials({
                 displayName: '',
                 email: '',
                 password: '',
@@ -42,25 +39,23 @@ class SignUp extends React.Component {
         }
     }
 
-    handleChange = event => {
+    const handleChange = event => {
         const { name, value } = event.target;
 
-        this.setState({ [name]:value });
+        setCredentials({ ...userCredentials, [name]:value });
     }
 
-    render() {
-        const { displayName, email, password, confirmPassword } = this.state;
         return (
             <div className="sign-up">
                 <h2 className="title">I do not have a account</h2>
                 <span>Sign up with your email and password</span>
 
-                <form className="sign-up-form" onSubmit={this.handleSubmit}>
+                <form className="sign-up-form" onSubmit={handleSubmit}>
                     <FormInput 
                         type="text"
                         name="displayName"
                         value={displayName}
-                        onChange={this.handleChange}
+                        onChange={handleChange}
                         label="Display Name"
                         required
                     />
@@ -68,7 +63,7 @@ class SignUp extends React.Component {
                         type="email"
                         name="email"
                         value={email}
-                        onChange={this.handleChange}
+                        onChange={handleChange}
                         label="Email"
                         required
                     />
@@ -76,7 +71,7 @@ class SignUp extends React.Component {
                         type="password"
                         name="password"
                         value={password}
-                        onChange={this.handleChange}
+                        onChange={handleChange}
                         label="Password"
                         required
                     />
@@ -84,16 +79,15 @@ class SignUp extends React.Component {
                         type="password"
                         name="confirmPassword"
                         value={confirmPassword}
-                        onChange={this.handleChange}
+                        onChange={handleChange}
                         label="Confirm Password"
                         required
                     />
 
-                    <CustomButton type="submit">SIGN UP</CustomButton>
+                    <button className="sign-up-btn btn rounded-0" type="submit">SIGN UP</button>
                 </form>
             </div>
         );
-    }
 };
 
 export default SignUp;

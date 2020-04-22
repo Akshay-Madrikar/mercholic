@@ -20,12 +20,12 @@
         font-size: 13px;
     }
 
-    .btn {
+    .menu-btn {
         background-color: grey;
         opacity: 0.7;
     }
 
-    .btn:hover {
+    .menu-btn:hover {
         background-color: white;
     }
 

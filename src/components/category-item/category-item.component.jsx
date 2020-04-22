@@ -15,7 +15,7 @@ const CategoryItem = ({ id, name, imageUrl, linkUrl, history, match }) => {
             }}>
                 <div className="card-body align-items-center d-flex justify-content-center">
                     <p className="category-item-btn btn mt-auto rounded-0">
-                        <span className="category-item-slogan">EXPLORE</span>
+                        EXPLORE
                     </p>
                 </div>
             </div>     

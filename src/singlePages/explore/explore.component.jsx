@@ -10,12 +10,9 @@ const CategoryOverviewWithSpinner = WithSpinner(CategoryOverview);
 const CategoryPageWithSpinner = WithSpinner(CategoryPage);
 const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
-class ExplorePage extends React.Component {
+const ExplorePage = ({ match }) => {
 
-    state = {
-        loading: false
-    }
-    componentDidMount() {
+    //componentDidMount() {
     //     const { updateCategory } = this.props;
     //     const categoryRef = firestore.collection('explore');
 
@@ -25,22 +22,18 @@ class ExplorePage extends React.Component {
     //       this.setState({ loading: false });
     //     });
 
-    };
-
-    render(){
-        const { match } = this.props;
-        const { loading } = this.state;
+    //};
         return (
             <div>
                 <Route exact path={`${match.path}`} 
-                render={props => (<CategoryOverviewWithSpinner isLoading={loading} {...props}/>)} />
+                render={props => (<CategoryOverviewWithSpinner {...props}/>)} />
                 <Route exact path={`${match.path}/:categoryId`} 
-                render={props => (<CategoryPageWithSpinner isLoading={loading} {...props}/>)} />
+                render={props => (<CategoryPageWithSpinner {...props}/>)} />
                 <Route path={`${match.path}/:categoryId/:collectionId`}
-                render={props => (<CollectionPageWithSpinner isLoading={loading} {...props}/>)} />
+                render={props => (<CollectionPageWithSpinner  {...props}/>)} />
             </div>
         );
-    }
 };
+
 
 export default ExplorePage;

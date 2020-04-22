@@ -201,6 +201,17 @@ body{margin-top:20px;}
     margin-right: 12px;
 }
 
+.coupon-form .apply-btn {
+    color: white;
+    background-color: black;
+
+    &:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+
 .form-control-sm:not(textarea) {
     height: 36px;
 }

@@ -3,12 +3,8 @@ import { connect } from 'react-redux';
 
 import { selectCollectionItems } from '../../redux/collection/collection.selectors';
 import CollectionItemCategory from '../../components/collection-item-category/collection-item-category.component';
-import { firestore, convertCollectionSnapshotToMap } from '../../firebase/firebase.util';
 import { updateCollections } from '../../redux/collection/collection.actions';
-import WithSpinner from '../../components/with-spinner/with-spinner.component';
 import './collection.styles.scss';
-
-//const CollectionItemCategoryWithSpinner = WithSpinner(CollectionItemCategory);
 
 class CollectionPage extends React.Component {
 

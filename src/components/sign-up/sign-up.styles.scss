@@ -8,4 +8,24 @@
     .title {
       margin: 10px 0;
     }
+
+    .sign-up-btn {
+      color: white;
+      background-color: black;
+      min-width: 165px;
+      width: auto;
+      height: 50px;
+    }
+
+    .sign-up-btn:hover {
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+    }
   }  
+
+  @media only screen and (max-width: 768px) {
+    .sign-up {
+        margin-left: 4em;
+    }
+  }
