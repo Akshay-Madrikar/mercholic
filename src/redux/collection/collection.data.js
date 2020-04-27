@@ -6,13 +6,13 @@ const COLLECTION_DATA = {
       linkUrl: 'explore/rapper/divine',
       items: [
           {
-              id: 2,
+              id: 1,
               name: 'GullyGang T-shirt',
               imageUrl: 'https://i.ibb.co/SsD19Cd/divine-merch-1.jpg',
               price: 250
           },
           {
-              id: 3,
+              id: 2,
               name: 'GullyGang Hoodie',
               imageUrl: 'https://i.ibb.co/7Cj7Wny/divine-merch-2.jpg',
               price: 180
