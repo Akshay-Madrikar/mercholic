@@ -24,8 +24,8 @@ const CollectionItem = ({ item, addItem }) => {
                     </div>     
                 </div>
             </div>
-            <div className="collection-item-footer">
-                <p className="collection-item-title text-left">{name}</p>
+            <div className="collection-item-footer text-center d-flex justify-content-between">
+                <p className="collection-item-title">{name}</p>
                 <p className="collection-item-price">&#x20b9;{price}</p>
             </div>
         </div>

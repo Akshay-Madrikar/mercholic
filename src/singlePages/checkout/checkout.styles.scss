@@ -212,6 +212,17 @@ body{margin-top:20px;}
     }
 }
 
+.shopping-cart-footer .column .back-btn {
+    color: white;
+    background-color: black;
+
+    &:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+    }  
+}
+
 .form-control-sm:not(textarea) {
     height: 36px;
 }

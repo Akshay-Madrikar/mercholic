@@ -25,14 +25,16 @@
             opacity: 0.85;
             display: flex;
         }
+
+        
         
         .collection-item-title {
             font-size: 1.3em;
-            margin-left: 1em;
+            margin-left: 120px;
         }
         .collection-item-price {
             font-size: 1.3em;
             position: absolute;
             top: 330px;
-            left: 240px;
+            left: 360px;
         }

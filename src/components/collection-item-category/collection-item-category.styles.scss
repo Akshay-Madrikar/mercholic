@@ -26,13 +26,16 @@
             display: flex;
         }
         
-        .collection-item-title {
-            font-size: 1.3em;
-            margin-left: 1em;
+        .collection-item-category-footer {
+            margin-left: 1.2em;
         }
-        .collection-item-price {
+        
+        .collection-item-category-title {
             font-size: 1.3em;
-            position: absolute;
-            top: 330px;
-            left: 240px;
+            //margin-left: 2.5em;
+        }
+        .collection-item-category-price {
+            font-size: 1.3em;
+            //top: 330px;
+            //left: 240px;
         }

@@ -40,7 +40,7 @@ return(
             <div className="column text-lg">Subtotal: <span className="text-medium">&#x20b9;{total}</span></div>
         </div>
         <div className="shopping-cart-footer">
-            <div className=" column btn"><button onClick={() => history.push("/explore")}><i className="icon-arrow-left"></i>&nbsp;Back to Shopping</button></div>
+            <div className="column"><button className="back-btn btn rounded-0" onClick={() => history.push("/explore")}><i className="icon-arrow-left"></i>&nbsp;Back to Shopping</button></div>
             <div className="warning">
                 *Please use the following test credit card for payments*
                 <br />

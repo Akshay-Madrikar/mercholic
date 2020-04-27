@@ -88,15 +88,15 @@ const COLLECTION_DATA = {
     items: [
       {
         id: 9,
-        name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-        price: 2800
+        name: 'BB T-shirt',
+        imageUrl: 'https://i.ibb.co/mX1Hnzp/bb-merch-1.jpg',
+        price: 500
       },
       {
         id: 10,
-        name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-        price: 1800
+        name: 'BB Full-Sleeve',
+        imageUrl: 'https://i.ibb.co/wKNdG19/bb-merch-2.png',
+        price: 600
       }
     ]
   },
@@ -109,15 +109,15 @@ const COLLECTION_DATA = {
     items: [
       {
         id: 11,
-        name: 'Black Converse',
-        imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-        price: 1100
+        name: 'Nusta Chai',
+        imageUrl: 'https://i.ibb.co/nQQR6B1/beyounick-merch-1.jpg',
+        price: 400
       },
       {
         id: 12,
-        name: 'Nike White AirForce',
-        imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-        price: 1600
+        name: 'Laptop Skin',
+        imageUrl: 'https://i.ibb.co/922t5tn/beyounick-merch-2.jpg',
+        price: 200
       }
     ]
   },
@@ -130,13 +130,13 @@ const COLLECTION_DATA = {
     items: [
       {
         id: 13,
-        name: 'Nike Red High Tops',
-        imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-        price: 1600
+        name: 'Poster',
+        imageUrl: 'https://i.ibb.co/M1MB280/Beerbiceps-merch-1.png',
+        price: 300
       },
       {
         id: 14,
-        name: 'Nike Brown High Tops',
+        name: 'Shoe',
         imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
         price: 1600
       }
@@ -151,15 +151,15 @@ const COLLECTION_DATA = {
     items: [
       {
         id: 15,
-        name: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-        price: 1900
+        name: 'Top',
+        imageUrl: 'https://i.ibb.co/kDZP0dk/Mostlysane-merch-1.jpg',
+        price: 400
       },
       {
         id: 16,
-        name: 'Timberlands',
-        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-        price: 2000
+        name: 'Shameless Poster',
+        imageUrl: 'https://i.ibb.co/mHpj81z/Mostlysane-merch-2.jpg',
+        price: 500
       }
     ]
   },
