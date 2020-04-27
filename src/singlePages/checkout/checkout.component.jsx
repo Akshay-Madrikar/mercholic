@@ -37,10 +37,10 @@ return(
                     <button className="apply-btn btn btn-sm rounded-0" type="submit">Apply Coupon</button>
                 </form>
             </div>
-            <div className="column text-lg">Subtotal: <span class="text-medium">&#x20b9;{total}</span></div>
+            <div className="column text-lg">Subtotal: <span className="text-medium">&#x20b9;{total}</span></div>
         </div>
         <div className="shopping-cart-footer">
-            <div className=" column btn"><button onClick={() => history.push("/explore")}><i class="icon-arrow-left"></i>&nbsp;Back to Shopping</button></div>
+            <div className=" column btn"><button onClick={() => history.push("/explore")}><i className="icon-arrow-left"></i>&nbsp;Back to Shopping</button></div>
             <div className="warning">
                 *Please use the following test credit card for payments*
                 <br />

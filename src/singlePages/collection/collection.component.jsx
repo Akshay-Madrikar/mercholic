@@ -6,15 +6,7 @@ import CollectionItemCategory from '../../components/collection-item-category/co
 import { updateCollections } from '../../redux/collection/collection.actions';
 import './collection.styles.scss';
 
-class CollectionPage extends React.Component {
-
-    constructor() {
-        super();
-        
-        this.state = {
-            loading: false
-        };
-    };
+const CollectionPage = ({ collections }) => {
 
     // unsubscribeFromSnapshot = null;
 
@@ -31,10 +23,6 @@ class CollectionPage extends React.Component {
 
     // console.log(itemName[0])
     // console.log(itemlinkUrl[0])
-
-    
-    render(){
-        const { collections } = this.props;
         const { name, items } = collections;
         //const { loading } = this.state;
         //console.log(collection);
@@ -48,34 +36,36 @@ class CollectionPage extends React.Component {
         //             )  
         //         }
         //     </div>
-
+            <div>
                 <div className="container mt-3 p-3">
                 <h1 className="text-center">{name.toUpperCase()}</h1>
                     <div className="row">
                         {
-                    items.map( (item) => 
+                            items.map( (item) => 
                             (   
-                            <div id={item.id}  className="col-md-3">
+                            <div key={item.id}  className="col-md-3">
+                                {
                                 <CollectionItemCategory  item={item} />
+                                }
                             </div>
                             
                             ))
                         }
                     </div> 
                 </div> 
+            </div>
         );
-    }
 };
 
 const mapStateToProps = ( state, ownProps ) => ({
     collections: selectCollectionItems(ownProps.match.params.collectionId)(state)
 });
 
-const mapDispatchToProps = dispatch => ({
-    updateCollections: collectionsMap => dispatch( updateCollections( collectionsMap ) )
-});
+// const mapDispatchToProps = dispatch => ({
+//     updateCollections: collectionsMap => dispatch( updateCollections( collectionsMap ) )
+// });
 
-export default connect(mapStateToProps,mapDispatchToProps)(CollectionPage);
+export default connect(mapStateToProps)(CollectionPage);
 
 // class CollectionPage extends React.Component {
     

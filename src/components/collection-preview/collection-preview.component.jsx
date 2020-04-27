@@ -20,8 +20,7 @@ const CollectionPreview = ({name, items, linkUrl }) => {
                                     <div key={item.id} className="col-md-6">
                                         {
                                             <CollectionItem  item={item} />
-                                            }
-                                    
+                                        }    
                                     </div>))
                               
                         }
