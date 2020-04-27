@@ -8,34 +8,9 @@ import './collection.styles.scss';
 
 const CollectionPage = ({ collections }) => {
 
-    // unsubscribeFromSnapshot = null;
-
-    // componentDidMount() {
-    //     const { updateCollections } = this.props;
-    //     const collectionRef = firestore.collection('collections');
-
-    //     this.unsubscribeFromSnapshot = collectionRef.onSnapshot(async snapShot => {
-    //     const collectionMap = convertCollectionSnapshotToMap(snapShot);
-    //     updateCollections(collectionMap);
-    //     this.setState({ loading: false });
-    //     });
-    // };
-
-    // console.log(itemName[0])
-    // console.log(itemlinkUrl[0])
         const { name, items } = collections;
-        //const { loading } = this.state;
-        //console.log(collection);
-        //console.log(name, items);
         return(
-        //     <div >
-        //         <h1 className="text-center">{name.toUpperCase()}</h1> 
-        //         {
-        //             items.map( (item) => (
-        //              <CollectionItemCategory id={item.id} item={item}/>)
-        //             )  
-        //         }
-        //     </div>
+  
             <div>
                 <div className="container mt-3 p-3">
                 <h1 className="text-center">{name.toUpperCase()}</h1>
@@ -61,81 +36,5 @@ const mapStateToProps = ( state, ownProps ) => ({
     collections: selectCollectionItems(ownProps.match.params.collectionId)(state)
 });
 
-// const mapDispatchToProps = dispatch => ({
-//     updateCollections: collectionsMap => dispatch( updateCollections( collectionsMap ) )
-// });
 
 export default connect(mapStateToProps)(CollectionPage);
-
-// class CollectionPage extends React.Component {
-    
-//     constructor(props){
-//         super(props);
-
-//         this.state = {
-//             collections: COLLECTION_DATA
-//         }
-
-//         console.log(props.match.params.collectionId)
-//     }
-
-
-
-
-//     render(){
-//         return(
-//         <div>
-//             {
-//                 this.state.collections.map( ({ id, ...otherCollectionProps }) => (
-//                     <CollectionPreview key={id} {...otherCollectionProps}/>
-//                 ))
-//             }
-//         </div>
-//         );
-//     }   
-
-// };
-
-    // const collectionItem = () => {
-    //     const items = []
-    //     const itemName = data.map(item => item.name)
-    //     const itemlinkUrl = data.map(item => item.linkUrl)
-    //     for(let i=0; i<data.length; i++){
-    //         if (itemName.toLowerCase() === itemlinkUrl.substr(itemlinkUrl.lastIndexOf('/') + 1)){
-    //             items.push(<CollectionPreview />)
-    //         }
-    //     }
-
-    //     return items;
-    // }
-
-
-    // -------------Instead of firebase----------------
-
-    
-    // const CollectionPage = ({ collection }) => {
-    //     // render(){
-    //         const { name, items } = collection;
-    //         //const { loading } = this.state;
-    //         console.log(collection);
-    //         console.log(name, items);
-    //         return(
-    //             <div >
-    //                 <h1 className="text-center">{name.toUpperCase()}</h1> 
-    //                 {
-    //                     items.map( (item) => (
-    //                      <CollectionItemCategoryWithSpinner  id={item.id} item={item}/>)
-    //                     )  
-    //                 }
-    //             </div>
-    //         );
-    //     //}
-    // };
-    
-    // const mapStateToProps = ( state, ownProps ) => ({
-    //     collection: selectCollectionItems(ownProps.match.params.collectionId)(state)
-    // });
-    
-    // const mapDispatchToProps = dispatch => ({
-    //     updateCollection: collectionMap => dispatch( updateCollection( collectionMap ) )
-    // });
