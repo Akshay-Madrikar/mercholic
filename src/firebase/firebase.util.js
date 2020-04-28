@@ -1,17 +1,9 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import { CONFIG } from './configFile';
 
-const config = {
-    apiKey: "AIzaSyCmbXrIctWjIQ9HYTeOK2TAgSZWLvUAipY",
-    authDomain: "mercholic-db.firebaseapp.com",
-    databaseURL: "https://mercholic-db.firebaseio.com",
-    projectId: "mercholic-db",
-    storageBucket: "mercholic-db.appspot.com",
-    messagingSenderId: "559405966154",
-    appId: "1:559405966154:web:505198cb69e96cb8fcd7b3",
-    measurementId: "G-96D26XMM1R"
-};
+const config = CONFIG;
 
 firebase.initializeApp( config );
 
